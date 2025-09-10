@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>TEST</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
+        <li><a href="qualifications.html">Resume</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="genai.html">AI generated</a></li>
+      </ul>
+    </nav>
+    <div
+      style="
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 28px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 28px rgba(12, 36, 60, 0.08);
+      "
+    >
+      <!-- Header -->
+      <header style="text-align: center; margin-bottom: 22px">
+        <h1
+          style="
+            margin: 0;
+            font-size: 2.1rem;
+            letter-spacing: 0.4px;
+            color: #0b4b6f;
+          "
+        >
+          Generative AI
+        </h1>
+        <p style="margin: 8px 0 0; color: #375a6b; opacity: 0.85">
+          An approachable overview of what genAI can do — examples included.
+        </p>
+      </header>
+
+      <!-- Highlights row -->
+      <section
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 18px;
+          justify-content: space-between;
+          margin-top: 18px;
+        "
+      >
+        <article
+          style="
+            flex: 1 1 260px;
+            background: linear-gradient(180deg, #ffffff, #f2fbff);
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(11, 75, 111, 0.06);
+            min-width: 260px;
+          "
+        >
+          <h2 style="margin: 0 0 10px; font-size: 1.05rem; color: #0b4b6f">
+            Text Generation
+          </h2>
+          <p style="margin: 0; color: #134a61">
+            Create articles, summaries, email drafts, and creative fiction.
+            Example: ask an assistant for a 150-word product description or a
+            polite cold-email template.
+          </p>
+        </article>
+
+        <article
+          style="
+            flex: 1 1 260px;
+            background: linear-gradient(180deg, #ffffff, #fff7f2);
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(160, 90, 30, 0.06);
+            min-width: 260px;
+          "
+        >
+          <h2 style="margin: 0 0 10px; font-size: 1.05rem; color: #6b3a12">
+            Image Creation
+          </h2>
+          <p style="margin: 0; color: #4b3122">
+            Generate illustrations, mockups, icons, and photo-style images from
+            prompts. Example: “create a flat-style hero image of a farmer using
+            a dairy chatbot.”
+          </p>
+        </article>
+
+        <article
+          style="
+            flex: 1 1 260px;
+            background: linear-gradient(180deg, #ffffff, #f7fff6);
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(20, 120, 60, 0.06);
+            min-width: 260px;
+          "
+        >
+          <h2 style="margin: 0 0 10px; font-size: 1.05rem; color: #1b6b3c">
+            Code Assistance
+          </h2>
+          <p style="margin: 0; color: #234b34">
+            Write snippets, refactor code, explain errors, or generate tests.
+            Example: “Show a secure Node.js snippet for file uploads with size
+            checks.”
+          </p>
+        </article>
+
+        <article
+          style="
+            flex: 1 1 260px;
+            background: linear-gradient(180deg, #ffffff, #fffaf7);
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(110, 60, 20, 0.04);
+            min-width: 260px;
+          "
+        >
+          <h2 style="margin: 0 0 10px; font-size: 1.05rem; color: #6b4a2a">
+            Data Visualization
+          </h2>
+          <p style="margin: 0; color: #3b4950">
+            Create charts, propose visual encodings, or produce code for
+            plotting. Example: “Generate a matplotlib script to plot monthly
+            milk production.”
+          </p>
+        </article>
+      </section>
+
+      <!-- Visual / demo block -->
+      <section
+        style="
+          margin-top: 26px;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          flex-wrap: wrap;
+        "
+      >
+        <div style="flex: 1 1 420px; min-width: 300px">
+          <div
+            style="
+              background: linear-gradient(135deg, #e8f8ff, #ffffff);
+              padding: 18px;
+              border-radius: 12px;
+              border: 1px solid rgba(11, 75, 111, 0.06);
+            "
+          >
+            <h3 style="margin: 0 0 10px; color: #0b4b6f">Quick demo</h3>
+            <p style="margin: 0 0 12px; color: #144556">
+              Example prompt to show a short generative output:
+            </p>
+            <div
+              style="
+                background: #0b4b6f;
+                color: white;
+                padding: 12px;
+                border-radius: 8px;
+                font-family: monospace;
+                font-size: 0.95rem;
+              "
+            >
+              <strong>Prompt:</strong> "Write a 2-sentence product blurb for a
+              dairy chatbot aimed at small family farms."
+            </div>
+            <div
+              style="
+                margin-top: 12px;
+                padding: 14px;
+                background: #fff;
+                border-radius: 8px;
+                border: 1px solid rgba(11, 75, 111, 0.06);
+              "
+            >
+              <em style="color: #0f3d52">Generated output:</em>
+              <p style="margin: 8px 0 0; color: #163844">
+                "FarmChat puts farm data and answers at your fingertips — ask
+                about feed ratios, cow health, or milk storage and get clear,
+                actionable guidance. Designed for busy family farms, it saves
+                time so you can focus on what matters most."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image placeholder -->
+        <div
+          style="
+            flex: 0 1 260px;
+            min-width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+          "
+        >
+          <div
+            style="
+              width: 220px;
+              height: 220px;
+              border-radius: 12px;
+              background: linear-gradient(180deg, #fff, #eef6ff);
+              border: 1px dashed rgba(11, 75, 111, 0.12);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div style="text-align: center; padding: 8px; color: #0b4b6f">
+              <strong>Image</strong>
+              <div style="font-size: 0.85rem; margin-top: 6px; color: #2d6b90">
+                (placeholder)
+              </div>
+            </div>
+          </div>
+          <small style="color: #345a6b; opacity: 0.9; text-align: center"
+            >Tip: replace this placeholder with a generated image URL or inline
+            data URI.</small
+          >
+        </div>
+      </section>
+
+      <!-- Short FAQ / notes -->
+      <section style="margin-top: 26px">
+        <h3 style="margin: 0 0 10px; color: #0b4b6f">Notes & Best Practices</h3>
+        <ul style="margin: 0 0 0 18px; color: #123b49">
+          <li style="margin-bottom: 6px">
+            Be specific in prompts — include style, tone, length, and examples
+            for best results.
+          </li>
+          <li style="margin-bottom: 6px">
+            Validate generated content (facts, code, and copyrighted material)
+            before use.
+          </li>
+          <li style="margin-bottom: 6px">
+            Combine modalities: text prompts can seed both images and code for
+            richer outputs.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Final: text box containing exact prompt used (user requested exact text) -->
+      <section style="margin-top: 28px">
+        <h3 style="margin: 0 0 8px; text-align: left; color: #0b4b6f">
+          Final prompt (exact)
+        </h3>
+
+        <label
+          for="final-prompt"
+          style="
+            display: block;
+            margin-bottom: 8px;
+            color: #134a61;
+            font-size: 0.95rem;
+          "
+        >
+          This text box contains the exact final prompt used to generate this
+          page:
+        </label>
+
+        <!-- Textarea with the exact prompt (including the surrounding double quotes) -->
+        <textarea
+          id="final-prompt"
+          readonly
+          rows="6"
+          style="
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(11, 75, 111, 0.12);
+            font-family: monospace;
+            font-size: 0.95rem;
+            resize: vertical;
+          "
+        >
+"Create an HTML page called genai.html that presents the capabilities of generative artificial intelligence (genAI). The page should use inline CSS for all styling instead of external files. At the top, include a centered heading titled 'Generative AI'. Below it, create multiple sections with short explanations and examples of genAI’s capabilities, such as text generation, image creation, code assistance, and data visualization. Include at least one visual element, like an image placeholder or styled box, to make the page engaging. At the bottom of the page, create a labeled text box that contains this exact final prompt so viewers can see the instructions used to generate the page."
+      </textarea
+        >
+
+        <div style="display: flex; gap: 8px; margin-top: 10px">
+          <button
+            id="copyBtn"
+            style="
+              padding: 8px 12px;
+              border-radius: 8px;
+              border: 1px solid rgba(11, 75, 111, 0.12);
+              background: #0b4b6f;
+              color: white;
+              cursor: pointer;
+            "
+          >
+            Copy prompt
+          </button>
+          <span
+            id="copiedMsg"
+            style="
+              align-self: center;
+              color: #17607f;
+              opacity: 0;
+              transition: opacity 180ms;
+            "
+            >Copied!</span
+          >
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // small helper for copying prompt
+      const copyBtn = document.getElementById("copyBtn");
+      const promptArea = document.getElementById("final-prompt");
+      const copiedMsg = document.getElementById("copiedMsg");
+
+      copyBtn.addEventListener("click", () => {
+        promptArea.select();
+        try {
+          document.execCommand("copy");
+          copiedMsg.style.opacity = 1;
+          setTimeout(() => (copiedMsg.style.opacity = 0), 1200);
+        } catch (e) {
+          // fallback: do nothing
+          alert("Press Ctrl/Cmd+C to copy");
+        }
+        window.getSelection().removeAllRanges();
+      });
+    </script>
+  </body>
+</html>
