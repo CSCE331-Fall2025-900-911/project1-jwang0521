@@ -43,6 +43,7 @@ h2 {
 .nav-btn {
   margin-right: 30px;
 }
+
 /*profile section*/
 section {
   padding-top: 4vh;
@@ -54,11 +55,14 @@ section {
 
 .profile-pic-container {
   display: flex;
-  width: 400px;
-  height: 400px;
+  flex-direction: column;
+  align-items: center;
   margin: auto 0;
 }
-
+.profile-pic-container img {
+  height: 400px;
+  width: 400px;
+}
 #profile {
   justify-content: center;
   gap: 5rem;
@@ -90,11 +94,11 @@ section {
 
 .btn-container {
   display: flex;
-  gap: 5rem;
-  margin-left: 150px;
-  margin-top: 20px;
-  margin-bottom: 100px;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
 }
+
 .btn {
   font-weight: 600;
   transition: all 300ms ease;

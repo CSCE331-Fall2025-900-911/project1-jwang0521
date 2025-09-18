@@ -4,7 +4,7 @@
     <title>Personal Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   </head>
-  <link rel="stylesheet" href="style.css" />
+  <link id="themeStylesheet" rel="stylesheet" href="style.css" />
 
   <body>
     <nav class="navbar">
@@ -15,6 +15,24 @@
         <li><a href="service.html">Service</a></li>
         <li><a href="genai.html">AI generated</a></li>
       </ul>
+
+      <button id="switchThemeBtn" class="btn nav-btn">Switch Theme</button>
+      <script>
+        const themeLink = document.getElementById("themeStylesheet");
+        const switchBtn = document.getElementById("switchThemeBtn");
+        if (localStorage.getItem("theme")) {
+          themeLink.href = localStorage.getItem("theme");
+        }
+        switchBtn.addEventListener("click", () => {
+          if (themeLink.getAttribute("href") === "style.css") {
+            themeLink.setAttribute("href", "style1.css");
+            localStorage.setItem("theme", "style1.css");
+          } else {
+            themeLink.setAttribute("href", "style.css");
+            localStorage.setItem("theme", "style.css");
+          }
+        });
+      </script>
     </nav>
     <section id="services">
       <h2>My Services</h2>
@@ -26,37 +44,42 @@
         that would help communities around me:
       </p>
       <div class="services-wrapper">
-        <fieldset>
-          <legend>
-            <strong>Application#1: Wesbite help small business growing</strong>
-          </legend>
-          <p>
-            A project idea I am especially passionate about is developing a
-            platform. similar to Groupon, but at a cheaper cost for small
-            businesses. Many small businesses struggle to grow because large
-            platforms often take high commissions. I want to create a platform
-            where small businesses can offer promotions and discounts without
-            losing their profit. Customers can discover local shops, services,
-            and restaurants more easily.
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <legend>
-            <strong>Application#2: AI language buddy</strong>
-          </legend>
-          <p>
-            A friendly AI chatbot designed to help second language learners
-            practice English in a safe, supportive, and fun way. It simulates
-            real life conversation depends on the user's needs. one of the core
-            features are role play conversation where AI takes on roles, learner
-            pratices dialogues that happen in their real life. Another core
-            feature is grammar feedback. It is usually hard for second language
-            English learners to understand grammar. The AI in this feature can
-            highlghts small mistakes but encourage gently. Some other feature
-            might include vocabulary support and fun engagement.
-          </p>
-        </fieldset>
+        <div class="service-container">
+          <fieldset>
+            <legend>
+              <strong
+                >Application#1: Wesbite help small business growing</strong
+              >
+            </legend>
+            <p>
+              A project idea I am especially passionate about is developing a
+              platform. similar to Groupon, but at a cheaper cost for small
+              businesses. Many small businesses struggle to grow because large
+              platforms often take high commissions. I want to create a platform
+              where small businesses can offer promotions and discounts without
+              losing their profit. Customers can discover local shops, services,
+              and restaurants more easily.
+            </p>
+          </fieldset>
+        </div>
+        <div class="service-container">
+          <fieldset>
+            <legend>
+              <strong>Application#2: AI language buddy</strong>
+            </legend>
+            <p>
+              A friendly AI chatbot designed to help second language learners
+              practice English in a safe, supportive, and fun way. It simulates
+              real life conversation depends on the user's needs. one of the
+              core features are role play conversation where AI takes on roles,
+              learner pratices dialogues that happen in their real life. Another
+              core feature is grammar feedback. It is usually hard for second
+              language English learners to understand grammar. The AI in this
+              feature can highlghts small mistakes but encourage gently. Some
+              other feature might include vocabulary support and fun engagement.
+            </p>
+          </fieldset>
+        </div>
       </div>
     </section>
   </body>

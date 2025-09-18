@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #e9f5db;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+p {
+  font-size: 20px;
+}
+/*side navbar styling*/
+.navbar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #b5c99a;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 0.9;
+}
+
+.navbar .nav-links li a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+.navbar .nav-links li a:hover {
+  background-color: #87986a;
+}
+
+.navbar .nav-btn {
+  margin: 20px auto;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #87986a;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  width: 180px;
+  height: 60px;
+}
+
+.navbar .nav-btn a {
+  font-size: large;
+}
+.navbar .nav-btn:hover {
+  background-color: #38491c;
+}
+
+#profile {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+.profile_text {
+  flex-grow: 1;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.profile-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.profile-pic-container img {
+  width: 300px;
+  margin-bottom: 30px;
+}
+.btn-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.btn {
+  margin: 20px;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-size: 18px;
+}
+.btn a {
+  color: black;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #b5c99a;
+  cursor: pointer;
+}
+.social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.profile-body {
+  margin: 100px;
+}
+
+/*project page */
+#projects {
+  padding: 3rem 2rem;
+  margin-left: 220px;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 50px;
+}
+
+.project-container {
+  gap: 20px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-text {
+  display: flex;
+  flex-direction: row;
+}
+.project-text p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-container:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 250px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.project-buttons {
+  margin: 1rem;
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-buttons button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #97a97c;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.project-buttons button:hover {
+  background-color: #718355;
+}
+
+.project-container button a {
+  color: white;
+  text-decoration: none;
+}
+legend {
+  font-size: 20px;
+}
+
+fieldset {
+  background-color: white;
+}
+
+/*qualification page*/
+#qualifications-wrapper {
+  margin-left: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-container iframe {
+  width: 700px;
+  height: 700px;
+  border: none;
+}
+
+.list-container {
+  padding: 20px;
+  border: solid;
+  border-radius: 10%;
+  background-color: white;
+}
+
+/*service page*/
+#services {
+  margin-left: 250px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.services-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.service-container {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}

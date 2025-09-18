@@ -4,7 +4,7 @@
     <title>Personal Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   </head>
-  <link rel="stylesheet" href="style.css" />
+  <link id="themeStylesheet" rel="stylesheet" href="style.css" />
 
   <body>
     <nav class="navbar">
@@ -15,76 +15,110 @@
         <li><a href="service.html">Service</a></li>
         <li><a href="genai.html">AI generated</a></li>
       </ul>
+
+      <button id="switchThemeBtn" class="btn nav-btn">Switch Theme</button>
+      <script>
+        const themeLink = document.getElementById("themeStylesheet");
+        const switchBtn = document.getElementById("switchThemeBtn");
+        if (localStorage.getItem("theme")) {
+          themeLink.href = localStorage.getItem("theme");
+        }
+        switchBtn.addEventListener("click", () => {
+          if (themeLink.getAttribute("href") === "style.css") {
+            themeLink.setAttribute("href", "style1.css");
+            localStorage.setItem("theme", "style1.css");
+          } else {
+            themeLink.setAttribute("href", "style.css");
+            localStorage.setItem("theme", "style.css");
+          }
+        });
+      </script>
     </nav>
     <section id="projects">
       <h2>My projects</h2>
       <div class="project-wrapper">
         <fieldset class="project-container">
           <legend><strong> Project#1: Dairy AI Chatbot</strong></legend>
-          <img
-            src="./image/chatbot_logo.png"
-            alt="project1"
-            class="project-img"
-          />
-          <p>
-            An interactive AI chatbot system for the dairy industry designed to
-            assist farmers and consumers with quick accesible information.Built
-            using Python and advanced Natural Language Processing (NLP)
-            techniques, the system can understand and respond to a wide range of
-            text-based queries in real time. Implemented features such as
-            context-aware responses, keyword recognition, and information
-            retrieval from structured and unstructured data sources to ensure
-            reliable answers. The chatbot helps users with tasks like tracking
-            dairy product information, understanding industry practices, and
-            answering frequently asked questions, ultimately improving
-            efficiency and user experience. Focused on creating a scalable and
-            user-friendly interface that facilitates seamless interaction and
-            enhances decision-making in the dairy sector.
-          </p>
-          <button><a href="https://github.com/jwang0521">GitHub</a></button>
-          <button>Live Demo</button>
+          <div class="project-text">
+            <img
+              src="./image/chatbot_logo.png"
+              alt="project1"
+              class="project-img"
+            />
+            <p>
+              An interactive AI chatbot system for the dairy industry designed
+              to assist farmers and consumers with quick accesible
+              information.Built using Python and advanced Natural Language
+              Processing (NLP) techniques, the system can understand and respond
+              to a wide range of text-based queries in real time. Implemented
+              features such as context-aware responses, keyword recognition, and
+              information retrieval from structured and unstructured data
+              sources to ensure reliable answers. The chabot also stores user
+              chatlog. The chatbot helps users with tasks like tracking dairy
+              product information, understanding industry practices, and
+              answering frequently asked questions, ultimately improving
+              efficiency and user experience. Focused on creating a realiable
+              tool and user-friendly interface.
+            </p>
+          </div>
+          <div class="project-buttons">
+            <button><a href="https://github.com/jwang0521">GitHub</a></button>
+            <button>Live Demo</button>
+          </div>
         </fieldset>
 
         <fieldset class="project-container">
           <legend><strong>Project#2: Spa Business Website</strong></legend>
-          <img src="./image/IMG_9446.JPG" alt="project2" class="project-img" />
-          <p>
-            Designed and devloped a responsive website for a spa businesss,
-            focusing on both aesthetic appeal and functional usability to
-            enhance customer engagement. Core functionalities included a service
-            catalog with detailed pricing and descriptions, an About Us section,
-            and integrated contact information for easy communication.
-            Implemented user authentication, allowing customers to create
-            accounts, log in securely, and manage appointments directly through
-            the website. The project demonstrates the ability to combine design
-            principles with functional web development, resulting in a practical
-            tool that streamlines business operations and enhances customer
-            satisfaction.
-          </p>
-          <button><a href="https://github.com/jwang0521">GitHub</a></button>
-          <button>Live Demo</button>
+          <div class="project-text">
+            <img
+              src="./image/IMG_9446.JPG"
+              alt="project2"
+              class="project-img"
+            />
+            <p>
+              Designed and devloped a responsive website for a spa businesss,
+              focusing on both aesthetic appeal and functional usability to
+              enhance customer engagement. Core functionalities included a
+              service catalog with detailed pricing and descriptions, an About
+              Us section, and integrated contact information for easy
+              communication. Implemented user sign-up/login, allowing customers
+              to create accounts, log in securely, and manage appointments
+              directly through the website. The project demonstrates the ability
+              to combine design principles with functional web development,
+              resulting in a practical tool that streamlines business operations
+              and enhances customer satisfaction.
+            </p>
+          </div>
+          <div class="project-buttons">
+            <button><a href="https://github.com/jwang0521">GitHub</a></button>
+            <button>Live Demo</button>
+          </div>
         </fieldset>
 
         <fieldset class="project-container">
           <legend><strong>Project#3: Sizzler</strong></legend>
-          <img src="./image/logo.png" alt="project2" class="project-img" />
-          <p>
-            Designed and devloped a mobile/web app that provides personalized
-            restaurant recommendations through a Tinder-like swipe interface,
-            making dining discovery engaging and intuitive. Built the front-end
-            using React, creating interactive, responsive components that allow
-            users to swipe right to save favorites or left to skip. Integrated a
-            recommendation system that considers user behavior, dietary
-            preferences, and location data to provide tailored suggestions,
-            enhancing both user engagement and satisfaction. Collaborated
-            closely with teammates to design the app architecture, ensuring
-            seamless state management, smooth navigation flow, and efficient
-            interaction between the front-end and back-end services. Focused on
-            optimizing performance, accessibility, and cross-device
-            responsiveness to deliver a polished and scalable product.
-          </p>
-          <button><a href="https://github.com/jwang0521">GitHub</a></button>
-          <button>Live Demo</button>
+          <div class="project-text">
+            <img src="./image/logo.png" alt="project2" class="project-img" />
+            <p>
+              Designed and devloped a mobile/web app that provides personalized
+              restaurant recommendations through a Tinder-like swipe interface,
+              making dining discovery engaging and intuitive. Built the
+              front-end using React, creating interactive, responsive components
+              that allow users to swipe right to save favorites or left to skip.
+              Integrated a recommendation system that considers user behavior,
+              food preferences, and location data to provide food suggestions,
+              enhancing both user engagement and satisfaction. Collaborated
+              closely with teammates to design the app architecture, ensuring
+              seamless state management, smooth navigation flow, and efficient
+              interaction between the front-end and back-end services. Focused
+              on optimizing performance, accessibility, and responsiveness to
+              deliver a polished and engaging product.
+            </p>
+          </div>
+          <div class="project-buttons">
+            <button><a href="https://github.com/jwang0521">GitHub</a></button>
+            <button>Live Demo</button>
+          </div>
         </fieldset>
       </div>
     </section>
