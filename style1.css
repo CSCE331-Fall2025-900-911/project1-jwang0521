@@ -239,6 +239,7 @@ fieldset {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 275px;
 }
 .service-container {
   background-color: white;
@@ -246,4 +247,33 @@ fieldset {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer {
+  margin-top: 50px;
+  margin-left: 200px;
+  background-color: #87986a;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer a:hover {
+  color: #aece7c;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(0, 0, 0);
 }
